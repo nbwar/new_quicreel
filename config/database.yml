@@ -1,0 +1,17 @@
+common: &common
+  adapter: postgresql
+  host: localhost
+  timeout: 5000
+
+development:
+  <<: *common
+  database: quicreel_dev
+
+test:
+  <<: *common
+  database: quicreel_test
+
+production:
+  <<: *common
+  database: quicreel
+
