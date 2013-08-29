@@ -6,9 +6,7 @@
   %p
     Enter your email address and password.
 
-  -if @errors
-    .login_errors
-      =@errors
+  = render 'shared/errors'
 
   =form_for(:session, url: sessions_path, :class => "login_form") do |f|
     = f.label :email, "Email"

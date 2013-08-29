@@ -1,13 +1,12 @@
 class UsersController < ApplicationController
   def new
-
-  end
-
-  def show
-
+    @user = User.new
   end
 
   def create
-
   end
+
+  def show
+  end
+
 end

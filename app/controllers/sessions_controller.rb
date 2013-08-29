@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       flash[:notice] = "Successfully logged in"
       redirect_to root_url
     else
-      @errors = "Invalid email/passowrd combination."
+      @errors = ["Invalid email/passowrd combination."]
       render :new
     end
   end
@@ -23,5 +23,9 @@ class SessionsController < ApplicationController
   private
     def user_email
       params[:session][:email].downcase
+    end
+
+    def user_password
+      params[:session][:password]
     end
 end
