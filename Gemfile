@@ -19,7 +19,6 @@ group :test, :development do
   gem 'shoulda'
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'database_cleaner'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'debugger'
@@ -29,6 +28,8 @@ group :test do
   gem 'capybara'
   gem 'spork'
   gem 'selenium-webdriver'
+  gem 'simplecov', :require => false
+  gem 'database_cleaner'
 end
 
 
