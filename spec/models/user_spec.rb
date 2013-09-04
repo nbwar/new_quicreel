@@ -26,7 +26,7 @@ describe User do
       expect(user.email).to eq user.email.downcase
     end
 
-    it 'should create a rembember to' do
+    it 'should create a rembember token' do
       expect(user.remember_token).to_not be_nil
     end
   end
